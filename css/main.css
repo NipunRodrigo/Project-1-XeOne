@@ -95,7 +95,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--light-color);
 }
 
 .gradient-square{
@@ -127,17 +127,17 @@
 }
 
 .gradient-square-items i{
-    color: white;
+    color: var(--light-color);
     font-size: 25px;
 }
 .gradient-square-items p{
-    color: white;
+    color: var(--light-color);
     font-size: 25px;
     margin: 20px;
     text-align: center;
 }
 .gradient-square-items h3{
-    color: white;
+    color: var(--light-color);
     font-size: 25px;
     text-align: center;
 }
@@ -166,7 +166,7 @@
  .button-scroll{
   background-color: purple;
      font-size: 20px;
-     color: white;
+     color: var(--light-color);
      border-radius: 10px;
      border: 40px;
      padding: 5px;
@@ -227,7 +227,7 @@
     margin-bottom: 15px;
    height: 70px;
     width: 70px;
-    border: 3px white solid;
+    border: 3px var(--light-color) solid;
     display: inline-block;
     border-radius: 50%;
     text-align: center;
@@ -317,38 +317,304 @@
 
 /*Creative Team*/
 
-
-/*Watch Video*/
-.video-wrapper{
+/* Video Click Section */
+.video-click-wrapper {
     width: 100%;
-    height: 400px;
+    padding: 80px 0;
+    background: linear-gradient(to right, #f6f6f6, #fff);
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
-.video-inner{
+
+.video-click-inner {
     width: 80%;
-    height: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-.video-inner-items{
+
+.video-click-inner-items {
     flex: 1;
+    min-width: 300px;
 }
-.button-scroll{
-    background-color: purple;
+
+.video-click-subtitle {
+    color: var(--light-blue-color);
     font-size: 20px;
-    color: white;
-    border-radius: 10px;
-    border: 40px;
-    padding: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
-.button-scroll:hover{
+
+.video-click-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.video-click-description {
+    color: var(--light-gray-color);
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.video-click-btn {
+    background-color: var(--dark-blue-color);
+    font-size: 16px;
+    color: var(--light-color);
+    border-radius: 10px;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.video-click-btn:hover {
     background-color: var(--light-blue-color);
 }
 
-.video-inner-items iframe{
+.video-click-thumbnail {
+    position: relative;
+    text-align: center;
+}
+
+.video-click-thumbnail img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.video-click-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, #423f9c, #862359);
+    color: var(--light-color);
+    font-size: 28px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.video-click-play:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+/* Video Click Section */
+
+    /* Mobile Apps Section */
+    .custom-mobile-apps {
+        padding: 80px 20px;
+        background: var(--light-color);
+
+    }
+
+    .custom-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .custom-section-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .custom-subtitle {
+        color: var(--light-blue-color);
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .custom-title {
+        font-size: 2.5rem;
+        color: var(--dark-blue-color);
+        margin: 0;
+        font-weight: 700;
+    }
+
+    .custom-app-features {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .custom-feature-column {
+        flex: 1;
+        min-width: 280px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .custom-image-column {
+        flex: 1;
+        min-width: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-image-column img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .custom-feature-box {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .custom-icon {
+        width: 60px;
+        height: 60px;
+        background: var(--light-blue-color);
+        color: var(--light-color);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 24px;
+    }
+
+    .custom-text h4 {
+        margin: 0 0 6px 0;
+        font-size: 1.2rem;
+        color: #212331;
+    }
+
+    .custom-text p {
+        margin: 0;
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+/* Mobile Apps Section */
+
+/* Counter Section */
+.counter-wrapper {
+    width: 100%;
+    padding: 80px 0;
+    background-color: var(--dark-blue-color);
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+}
+
+.counter-inner {
     width: 80%;
-    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
 
-/*Watch Video*/
+.counter-inner-items {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
 
+.counter-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--light-color);
+}
+
+.counter-label {
+    font-size: 1rem;
+    color: var(--light-color);
+}
+
+/* Counter Section */
+
+
+/* Pricing Tables Section */
+.pricing-wrapper {
+    width: 100%;
+    padding: 80px 0;
+    background-color: var(--light-gray-color);
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-inner {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pricing-inner-items {
+    background-color: var(--light-color);
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.pricing-inner-items:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-title {
+    font-size: 1.5rem;
+    color: var(--dark-blue-color);
+    margin-bottom: 10px;
+}
+
+.pricing-price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.pricing-features li {
+    margin: 10px 0;
+}
+
+.pricing-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--dark-blue-color);
+    color: var(--light-color);
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.pricing-button:hover {
+    background-color: var(--light-blue-color);
+}
+
+.pricing-inner-items.featured {
+    border: 2px solid var(--light-blue-color);
+    background-color: var(--light-color);
+}
+
+/* Pricing Tables Section */
